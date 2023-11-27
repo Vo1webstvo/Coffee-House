@@ -40,8 +40,12 @@
       border-radius: 100px;
       border: 1px solid #c1b6ad;
       cursor: pointer;
+      transition: transform 0.5s ease;
       &:last-child {
         margin-right: 0;
+      }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -59,6 +63,11 @@
         margin-bottom: 16px;
         &:last-child {
           margin-bottom: 0;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
         }
         span {
           margin-left: 8px;

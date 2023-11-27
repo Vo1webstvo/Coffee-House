@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #e1d4c9;
@@ -15,12 +19,15 @@ body {
 }
 
 .main {
-  padding-bottom: 100px;
+  padding-bottom: 88px;
 }
 
 @import './header';
+@import './enjoy';
 @import './button';
 @import './mainCoffe';
 @import './mainAbout';
 @import './mainMobile';
 @import './footer';
+@import './coffePage';
+@import './preview';
