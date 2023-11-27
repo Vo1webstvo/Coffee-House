@@ -2,7 +2,7 @@
 console.log(
   '1. https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week1.md\n',
   '2. https://prnt.sc/H4fslmko9Chk\n',
-  '3. https://calm-genie-5951b1.netlify.app/\n',
+  '3. https://illustrious-dodol-1141a1.netlify.app/',
   '4. 27.11.2023 / 28.11.2023\n',
   '5. Score - 98\n',
       '   1. score - 16\n',
