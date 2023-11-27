@@ -110,10 +110,15 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400; }
-  .enjoy__link {
-    text-decoration: none; }
   .enjoy__btn {
-    margin-top: 40px; }
+    text-decoration: none;
+    margin-top: 40px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600; }
     .enjoy__btn:hover {
       background: #e1d4c9; }
       .enjoy__btn:hover::after {
@@ -496,12 +501,18 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 115px;
+    width: auto;
     height: 46px;
     border-radius: 100px;
     border: 1px solid var(--border-light, #c1b6ad);
     margin-right: 16px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: var(--text-dark, #403F3D);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 16px 0 8px; }
     .coffePage__btns__btn:last-child {
       margin-right: 0; }
     .coffePage__btns__btn:first-child {
@@ -520,7 +531,7 @@ body {
               align-items: center;
       width: 30px;
       height: 30px;
-      margin: 0 8px;
+      margin-right: 8px;
       border-radius: 100px;
       background: var(--background-body, #e1d4c9); }
 

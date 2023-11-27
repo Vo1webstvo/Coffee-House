@@ -22,12 +22,19 @@
     &__btn {
       display: flex;
       align-items: center;
-      width: 115px;
+      width: auto;
       height: 46px;
       border-radius: 100px;
       border: 1px solid var(--border-light, #c1b6ad);
       margin-right: 16px;
       cursor: pointer;
+      color: var(--text-dark, #403F3D);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      padding: 0 16px 0 8px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -43,7 +50,7 @@
         align-items: center;
         width: 30px;
         height: 30px;
-        margin: 0 8px;
+        margin-right: 8px;
         border-radius: 100px;
         background: var(--background-body, #e1d4c9);
       }

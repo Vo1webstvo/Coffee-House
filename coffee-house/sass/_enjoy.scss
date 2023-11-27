@@ -29,11 +29,15 @@
     font-style: normal;
     font-weight: 400;
   }
-  &__link {
-    text-decoration: none;
-  }
   &__btn {
+    text-decoration: none;
     margin-top: 40px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
     &:hover {
       background: #e1d4c9;
       &::after {
