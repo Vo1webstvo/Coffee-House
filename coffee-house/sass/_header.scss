@@ -58,6 +58,27 @@
           height: 100%;
         }
       }
+      
+    }
+    &__burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 100px;
+      border: 1px solid var(--border-dark, #665F55);
+      span {
+        display: inline-block;
+        width: 16px;
+        height: 1px;
+        stroke-width: 1.5px;
+        background-color:  #403F3D;
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+
+        }
+
+      }
     }
   }
 }
