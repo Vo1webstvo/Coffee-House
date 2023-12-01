@@ -22,6 +22,14 @@ body {
   padding-bottom: 88px;
 }
 
+.asidePanel {
+  display: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 @import './header';
 @import './enjoy';
 @import './button';
