@@ -252,9 +252,22 @@
       align-items: center;
       list-style-type: none;
       li {
+        position: relative;
         margin-bottom: 60px;
         &:last-child {
           margin-bottom: 0;
+          &::after {
+            position: absolute;
+            content: '';
+            position: absolute;
+            top: -12%;
+            left: 70px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-image: url('../assets/img/coffee-cup.svg');
+            background-size: cover;
+          }
         }
         a {
           color: #403f3d;
@@ -381,10 +394,10 @@
         height: 348px;
       }
       &__arrow1 {
-        top: 38%;
+        display: none;
       }
       &__arrow2 {
-        top: 38%;
+        display: none;
       }
     }
     &__text {
