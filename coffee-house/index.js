@@ -1,38 +1,38 @@
-'use strict'
-console.log(
-  '1. https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week1.md\n',
-  '2. https://prnt.sc/H4fslmko9Chk\n',
-  '3. https://illustrious-dodol-1141a1.netlify.app/',
-  '4. 27.11.2023 / 28.11.2023\n',
-  '5. Score - 98\n',
-      '   1. score - 16\n',
-          '       1.1  -12\n',
-          '       1.2  -0 не добавлял Favicon для каждой страницы\n',
-          '       1.3  -2\n',
-          '       1.4  -2\n',
-      '   2. score - 40\n',
-          '       2.1  -4\n',
-          '       2.2  -6\n',
-          '       2.3  -6\n',
-          '       2.4  -6\n',
-          '       2.5  -6\n',
-          '       2.6  -6\n',
-          '       2.7  -6\n',
-      '   3. score 10\n',
-          '       3.1  -4\n',
-          '       3.2  -4\n',
-          '       3.3  -2\n',
-      '   4. score 32\n',
-          '       4.1  -4\n',
-          '       4.2  -2\n',
-          '       4.3  -2\n',
-          '       4.4  -2\n',
-          '       4.5  -2\n',
-          '       4.6  -2\n',
-          '       4.7  -2\n',
-          '       4.8  -4\n',
-          '       4.9  -2\n',
-          '       4.10 -2\n',
-          '       4.11  -4\n',
-          '       4.12  -4\n'
-);
+'use strict';
+
+const burger = document.querySelector('.header__menu__burger');
+const aside = document.querySelector('.asidePanel');
+const close = document.querySelectorAll('.asidePanel__nav');
+const closeBurger = document.querySelector('.header__menu__burger-close');
+
+burger.addEventListener('click', () => {
+  if (!aside.classList.contains('active')) {
+    aside.classList.add('active');
+    burger.style.display = 'none';
+    closeBurger.style.display = 'block';
+    document.body.classList.add('modal-open');
+  } else {
+    aside.classList.remove('active');
+    burger.style.display = 'flex';
+    closeBurger.style.display = 'none';
+    document.body.classList.remove('modal-open');
+  }
+});
+
+closeBurger.addEventListener('click', () => {
+  aside.classList.remove('active');
+  burger.style.display = 'flex';
+  closeBurger.style.display = 'none';
+  document.body.classList.remove('modal-open');
+});
+
+close.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item.classList.contains('asidePanel__nav')) {
+      aside.classList.remove('active');
+      burger.style.display = 'flex';
+      closeBurger.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    }
+  });
+});
