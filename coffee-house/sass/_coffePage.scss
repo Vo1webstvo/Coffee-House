@@ -1,0 +1,59 @@
+.coffePage {
+  &__title {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 800px;
+    color: var(--text-dark, #403f3d);
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    span {
+      color: var(--text-accent, #b0907a);
+      font-style: italic;
+    }
+  }
+  &__btns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    &__btn {
+      display: flex;
+      align-items: center;
+      width: auto;
+      height: 46px;
+      border-radius: 100px;
+      border: 1px solid var(--border-light, #c1b6ad);
+      margin-right: 16px;
+      cursor: pointer;
+      color: var(--text-dark, #403F3D);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      padding: 0 16px 0 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &:first-child {
+        background: var(--background-container, #665f55);
+      }
+      &:hover {
+        background: var(--background-container, #665f55);
+      }
+      &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        border-radius: 100px;
+        background: var(--background-body, #e1d4c9);
+      }
+    }
+  }
+}

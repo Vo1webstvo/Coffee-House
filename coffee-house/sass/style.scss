@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e1d4c9;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-bottom: 88px;
+}
+
+@import './header';
+@import './enjoy';
+@import './button';
+@import './mainCoffe';
+@import './mainAbout';
+@import './mainMobile';
+@import './footer';
+@import './coffePage';
+@import './preview';
